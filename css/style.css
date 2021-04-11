@@ -7,12 +7,20 @@
 body{
     background-color: white;
     font-family: 'Raleway', sans-serif;
+    max-width: 70%;
+    margin: auto;
+
 }
 
 /*link appearance*/
 a{
     text-decoration: none;
     color: black;
+}
+
+/*Star Icon color*/
+.fa-star{
+    color: blue;
 }
 
 /*inputfield, filters and slogans here*/
@@ -28,6 +36,7 @@ img{
     max-height: 3em;
 }
 /* Main Content Container*/
+/* First Try
 .container{
     border: 2px solid rgb(70, 190, 96);
     display: flex;
@@ -75,6 +84,91 @@ img{
         display: flex;
         flex-flow: row wrap;
     }
+    */
+
+.container{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    background-color: burlywood;
+    padding: 5px;
+}
+
+#mostpopular{
+    display: flex;
+    flex-flow: column;
+    background-color: darkseagreen;
+    border: 2px solid black;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+
+}
+    .popaccommodation{
+        border: 2 px solid black;
+        border-radius: 1em;
+        padding: 0.2em;
+        background-color: honeydew;
+        flex-basis: 4em;
+        margin: 20px;
+        justify-content: space-evenly;
+        flex-grow: 1;
+        min-block-size: 4fr;
+        
+    }
+
+    #mostpopular article:nth-child(3){
+        background-color: hotpink;
+    }
+
+    .popimg{
+        float: left;
+        max-width: 11em;
+        max-height: 11em;
+        width: max-content;
+        object-fit: cover;
+        padding-right: 0.5em;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+       
+    }
+
+    .popinfo{
+        /*line-height: 1em;*/
+        line-height-step: 0.2em;
+    }
+    .stars{
+        vertical-align: bottom;
+    }
+
+#results{
+    flex-grow: 1;
+    background-color: indianred;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+}
+
+#accsection {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: lavender;
+    border: 2px solid black;
+    min-height: min-content;
+    max-width: 3fr;
+}
+
+.accommodation{
+    border: 3px solid black;
+    border-radius: 1em;
+    padding: 1em;
+    flex-basis: 250px;
+    flex-grow: 1;
+    min-height: 12em;
+    justify-content: space-around;
+    align-content: center;
+    margin: 30px;
+}
+
 
 footer{
     display: flex;
