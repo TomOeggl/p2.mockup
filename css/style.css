@@ -23,6 +23,10 @@ a{
     color: blue;
 }
 
+#greystar.fa-star{
+    color: grey;
+}
+
 /*inputfield, filters and slogans here*/
 nav{
     display: flex;
@@ -101,9 +105,12 @@ img{
     border-radius: 1em;
     padding: 1em;
     margin: 1em;
-    
-
 }
+
+        .fa-chart-line{
+            float: right;
+        }
+
     .popaccommodation{
         border: 2 px solid black;
         border-radius: 1em;
@@ -114,18 +121,20 @@ img{
         justify-content: space-evenly;
         flex-grow: 1;
         min-block-size: 4fr;
+        position: relative; /*enables to use absolute position in child container (for .stars)*/
         
     }
-
+/*      Change child color for control
     #mostpopular article:nth-child(3){
         background-color: hotpink;
     }
-
+*/
     .popimg{
         float: left;
         max-width: 11em;
         max-height: 11em;
-        width: max-content;
+        width: 11em;
+        height: 11em;
         object-fit: cover;
         padding-right: 0.5em;
         border-top-left-radius: 1em;
@@ -138,7 +147,9 @@ img{
         line-height-step: 0.2em;
     }
     .stars{
-        vertical-align: bottom;
+        position: absolute;
+        bottom: 0px;
+        left: 11.7em;
     }
 
 #results{
