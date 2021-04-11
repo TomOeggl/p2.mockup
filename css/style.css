@@ -1,0 +1,93 @@
+
+/*import the ralewayfont from google */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+
+
+body{
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*link appearance*/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*inputfield, filters and slogans here*/
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Image Behaviour*/
+img{
+    max-width: 1 fr;
+    max-height: 3em;
+}
+/* Main Content Container*/
+.container{
+    border: 2px solid rgb(70, 190, 96);
+    display: flex;
+    flex-flow: row-reverse wrap;
+    flex-basis: 300px;
+    
+    
+}
+
+    .mostpopular{
+        background-color: cadetblue;
+        border: 4px solid black;
+        display: flex;
+        flex-flow: column wrap;
+        flex-basis: 1fr;
+        max-width: 1fr;
+    }
+
+    .fas fa-chart-line{
+        justify-self: right;
+    }
+
+    .accsection{
+        background-color: cornsilk;
+        border: 4px solid rgb(224, 71, 71);
+        display: flex;
+        flex-flow: row wrap;
+        flex-basis: 300px;
+        flex-grow: 1;
+        align-content: space-between;
+    }
+        .accommodation{
+            border-color: darkorchid;
+            background-color: darkred;
+            border-radius: 30px;
+            padding: 2em;
+            flex-basis: 300px;
+            flex-grow: 1;
+            max-width: 1fr;
+        }
+
+    .actsection{
+        background-color: darkkhaki;
+        border: 4px solid black;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    background:blanchedalmond;
+    justify-content: space-evenly;
+}
+
+    .footerinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        flex-basis: 300px;
+        flex-grow: 1fr;
+        padding: 1.5em;
+    }
