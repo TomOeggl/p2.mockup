@@ -17,9 +17,11 @@
         <header>
             <!-- Logo + Top Navigation (maybe in seperate class)-->
             <img src="#" alt="Reservia Logo" title="Reservia Logo">
+            
             <a class="topnav" href="#">Accommodations</a>
             <a class="topnav" href="#">Activities</a>
             <a id="Sign Up" href="#">Sign Up</a>
+            
         </header>
 
         <nav id="searchbox">
@@ -31,6 +33,7 @@
             <!--Filters with icons class="filter"-->
             <p>#infoicon| More than 500 accommodations are available in this <br> city</p>
         </nav>
+        
 
         <section class="container">
             <!-- Main container for modular arranged content-->
@@ -39,39 +42,46 @@
                 <h1>Most Popular <i class="fas fa-chart-line"></i></h1>
                 
                 <!-- Contains 'Most Popupar' section -->
-                    <article class="accommodation">
-                    <img src="#" alt="#" title="Morning Sun Hotel"> 
+                    <article class="popaccommodation">
+                    <img class="popimg" src="#" alt="#" title="Morning Sun Hotel"> 
                     <h2>Morning Sun Hotel</h2>
                     <p>Night starting at <strong>128€</strong></p>
                     <!--Stars-->
                     </article>
-                    <article class="accommodation">
-                    <img src="#" alt="#" title="Au coeur de l'eau Bed and Breakfast"> 
+                    <article class="popaccommodation">
+                    <img class="popimg" src="#" alt="#" title="Au coeur de l'eau Bed and Breakfast"> 
                     <h2>Au coeur de l'eau Bed and Breakfast</h2>
                     <p>Night starting at <strong>71€</strong></p>
                     <!--Stars-->
                     </article>
-                    <article class="accommodation">
-                    <img src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="#" title="Tout bleu et Blanc Hotel"> 
-                    <h2>Tout bleu et Blanc Hotel</h2>
-                    <p>Night starting at <strong>68€</strong></p>
-                    <!--Stars-->
+                    <article class="popaccommodation">
+                        <img class="popimg" src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="#" title="Tout bleu et Blanc Hotel"> 
+                        <div class="popinfo">
+                            <h2>Tout bleu et Blanc Hotel</h2>
+                            <p>Night starting at <strong>68€</strong></p>
+                        </div>
+                        <!--Stars-->
+                        <p class="stars"> <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        </p>
+                    
                     </article>
             </div>
 
-            <div id="accsection">
-                <h1>Accommodations in Marseille</h1>
-                <!-- Cointains 'Accommodations' section-->
-                    <article class="accommodation">Result 1</article>
-                    <article class="accommodation">Result 2</article>
-                    <article class="accommodation">Result 3</article>
-                    <article class="accommodation">Result 4</article>
-                    <article class="accommodation">Result 5</article>
-                    <article class="accommodation">Result 6</article>
-                <a href="#"><h2>Show more</h2></a>
+            <div id="results">
+                <h1>Accommodations in Marseille<br></h1>
+                <div id="accsection">
+                
+                  <!-- Cointains 'Accommodations' section-->
+                      <article class="accommodation">Result 1</article>
+                      <article class="accommodation">Result 2</article>
+                      <article class="accommodation">Result 3</article>
+                      <article class="accommodation">Result 4</article>
+                      <article class="accommodation">Result 5</article>
+                      <article class="accommodation">Result 6</article>
+                    </div>
+                    <a href="#"><h2>Show more</h2></a>
             </div>
-
-            
 
         </section>
 <div id="actsecion">
