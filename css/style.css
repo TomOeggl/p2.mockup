@@ -211,6 +211,7 @@ nav {
 
 #overflowinfo {
   max-width: 40%;
+  min-width: 300px;
 }
 
 /* Image Behaviour*/
@@ -655,8 +656,8 @@ footer {
     min-width: 100%;
   }
 
-  #filtersheading {
-    padding-right: 10em;
+  #filtersheading{
+    margin-right: 16em;
   }
 
   .filter {
@@ -679,7 +680,7 @@ footer {
   }
 
   #overflowinfo {
-    max-width: none;
+    max-width: 100%;
   }
 
   #container {
@@ -795,12 +796,10 @@ footer {
 
 @media all and (min-width: 480px) and (max-width: 1000px){
   body{
-    font-size: 130%;
+    font-size: 140%;
   }
 
-  .popaccommodation{
-    font-size: 109%;
-  }
+  
 
  
 
@@ -816,4 +815,18 @@ footer {
   .activity{
     flex-basis: 18em;
   }
+}
+
+@media all and (min-width: 550px) and (max-width: 1000px){
+.popaccommodation{
+    font-size: 109%;
+  }
+}
+
+@media all and (max-width: 480px){
+  body{
+    font-size: 95%;
+  }
+
+  
 }
