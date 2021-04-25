@@ -95,8 +95,8 @@ nav {
   align-items: center;
   margin-top: 2em;
   max-width: 100%;
-  min-width: 70em;
-  max-width: 100%;
+  min-width: 80em;
+  
 }
 
 #filtersheading {
@@ -105,15 +105,15 @@ nav {
 .filter {
   /*padding-right: -4em;*/
   max-width: max-content;
-  font-size: 1.5em;
+  font-size: 1vw;
   font-weight: bold;
   background-color: white;
   /*padding-top: 0.5em;
   padding-bottom: 0.5em;*/
   padding-right: 0.5em;
-  border-top: 2px solid #c0bfbf;
-  border-right: 2px solid #c0bfbf;
-  border-bottom: 2px solid #c0bfbf;
+  border-top: 1.5px solid #c0bfbf;
+  border-right: 1.5px solid #c0bfbf;
+  border-bottom: 1.5px solid #c0bfbf;
   min-width: max-content;
   border-bottom-left-radius: 1em;
   border-top-left-radius: 1em;
@@ -405,8 +405,7 @@ img {
   margin-bottom: 1em;
 }
 
-h2.accname {
-}
+
 
 .accprice {
   line-height: 0.8em;
@@ -600,7 +599,7 @@ footer {
 
   .filter {
     margin: 0.5em;
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 
   .filter:nth-child(1) {
@@ -821,15 +820,25 @@ footer {
   .popname{
     left: 12.2em;
   }
+
+  #overflowinfo{
+    font-size: small;
+  }
 }
 
 @media all and (min-width: 1000px) and (max-width: 1400px){
   body{
     font-size: 90%;
     max-width: 95%;
+    margin: auto;
+    margin-right: 0px;
   }
 
   .actimg{
     max-height: calc(100% - 2em);
+  }
+
+  .filter{
+    font-size: 1.5vw;
   }
 }
