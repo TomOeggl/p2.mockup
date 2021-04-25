@@ -71,7 +71,7 @@ nav {
   box-sizing: border-box;
 }
 
-#sloganpart2{
+#sloganpart2 {
   margin-bottom: 2em;
   margin-top: -0.3em;
 }
@@ -371,7 +371,7 @@ img {
 }
 
 .accommodation {
-  FONT-VARIANT: JIS04;
+  font-variant: JIS04;
   /*border: 3px solid black;*/
   background-color: white;
   border-radius: 1em;
@@ -414,7 +414,8 @@ img {
   margin-bottom: 1em;
 }
 
-h2.accname {}
+h2.accname {
+}
 
 .accprice {
   line-height: 0.8em;
@@ -591,7 +592,6 @@ footer {
     max-width: 100%;
     margin: auto;
     align-items: center;
-    
   }
 
   #logo {
@@ -669,7 +669,7 @@ footer {
     min-width: 100%;
   }
 
-  #filtersheading{
+  #filtersheading {
     margin-right: 16em;
   }
 
@@ -721,13 +721,11 @@ footer {
 
   .popaccommodation {
     min-width: 100%;
-    
   }
 
   .popimg {
     max-width: 15em;
     max-height: 15em;
-    
   }
 
   .popname {
@@ -799,89 +797,83 @@ footer {
     flex-basis: 15em;
   }
 
-  .actimg{
+  .actimg {
     max-height: calc(100% - 3em);
   }
 
-  .actinfo{
+  .actinfo {
     font-size: 130%;
   }
 }
 
-@media all and (min-width: 480px) and (max-width: 1200px){
-  body{
+@media all and (min-width: 480px) and (max-width: 1200px) {
+  body {
     font-size: 210%;
   }
 
-  .accstars{
+  .accstars {
     position: absolute;
     bottom: 0em;
   }
 
- 
-
-  .accommodation{
+  .accommodation {
     max-height: 20em;
     min-height: 16.5em;
   }
 
-  .accimg{
+  .accimg {
     max-height: 10em;
     height: 13em;
   }
 
-  .activity{
+  .activity {
     flex-basis: 18em;
   }
 
-  .actimg{
-    height: calc(100% - 3.5em)
+  .actimg {
+    height: calc(100% - 3.5em);
   }
 }
 
-@media all and (min-width: 550px) and (max-width: 1000px){
-.popaccommodation{
+@media all and (min-width: 550px) and (max-width: 1000px) {
+  .popaccommodation {
     font-size: 109%;
   }
 }
 
-@media all and (max-width: 480px){
-  body{
+@media all and (max-width: 480px) {
+  body {
     font-size: 95%;
   }
-
-  
 }
-@media all and (min-width: 1200px){
-  .accstars{
+@media all and (min-width: 1200px) {
+  .accstars {
     position: absolute;
     bottom: 0em;
   }
 
-  
-
-  .actimg{
+  .actimg {
     height: 100%;
     max-height: calc(100% - 4em);
   }
 
-  .actinfo{
+  .actinfo {
     bottom: -0.4em;
   }
 
-  .accommodation{
+  .accommodation {
     height: 17.5em;
   }
 
-  .popprice{
+  .popprice {
     bottom: 2em;
   }
 
-  #topnavcontainer{
+  #topnavcontainer {
     float: right;
   }
 
-  #searchbar{
+  #searchbar {
     width: max-content;
   }
 }
