@@ -38,7 +38,7 @@ header {
   /*border: 3px solid black;
     background-color: greenyellow;*/
   width: max-content;
-  float: right;
+  float: top;
 }
 
 .topnav {
@@ -73,16 +73,15 @@ nav {
 
 #sloganpart2{
   margin-bottom: 2em;
-  margin-top: -1em;
+  margin-top: -0.3em;
 }
 
 #searchbar {
   padding: 0em;
-
   width: 25.6em;
   border-radius: 1em;
   box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.05);
-  height: 3.36em;
+  height: 3.2em;
 }
 
 #searchbar:focus,
@@ -94,10 +93,11 @@ nav {
   display: flex;
   flex-flow: row wrap;
   flex-grow: 0;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 2em;
-  max-width: 90%;
+  max-width: 100%;
+  min-width: 70em;
 }
 
 #filtersheading {
@@ -122,6 +122,7 @@ nav {
   border-bottom-right-radius: 1.2em;
   max-height: calc(max-content - 4px);
   margin: 0.3em;
+  margin-right: 1em;
 }
 
 .filter:hover {
@@ -155,8 +156,7 @@ nav {
   background-color: #f2f2f2;
   border-top-left-radius: 1em;
   border-bottom-left-radius: 1em;
-
-  margin-right: -5px;
+  margin-right: -10px;
   vertical-align: 1px;
   box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.05);
 }
@@ -170,6 +170,8 @@ nav {
   font-size: larger;
   font-weight: bold;
   box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.05);
+  height: auto;
+  align-self: center;
 }
 
 #locinput:focus {
@@ -191,6 +193,7 @@ nav {
   transition: 0.3s;
   margin-top: -20px;
   margin-bottom: 0px;
+  margin-right: -3em;
 }
 #searchbutton:hover,
 .fa-search {
@@ -212,6 +215,7 @@ nav {
 #overflowinfo {
   max-width: 40%;
   min-width: 300px;
+  font-size: smaller;
 }
 
 /* Image Behaviour*/
@@ -286,7 +290,7 @@ img {
   padding: 1em;
   margin: 1em;
   max-width: 1.2fr;
-  max-height: 47.5em;
+  max-height: 55em;
 }
 
 .fa-chart-line {
@@ -303,10 +307,9 @@ img {
   justify-content: space-evenly;
   flex-grow: 1;
   max-height: 11em;
-
-  min-width: 380px;
+  min-width: 420px;
   position: relative; /*enables to use absolute position in child container (for .stars)*/
-  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 5px 9px rgba(0, 0, 0, 0.02);
   transition: 0.2s;
 }
 /*      Change child color for control
@@ -327,20 +330,25 @@ img {
 }
 
 .popname {
+  position: absolute;
   margin-top: 0.2rem;
   font-size: larger;
+  left: 10.7em;
+  top: 0.8em;
 }
 
 .popprice {
   position: absolute;
   bottom: 4.5rem;
   left: 11.7em;
+  margin-left: 1em;
 }
 /*only stars in most popular section*/
 .stars {
   position: absolute;
   bottom: 0px;
   left: 11.7em;
+  margin-left: 1em;
 }
 
 #results {
@@ -363,17 +371,19 @@ img {
 }
 
 .accommodation {
+  FONT-VARIANT: JIS04;
   /*border: 3px solid black;*/
   background-color: white;
   border-radius: 1em;
-  flex-basis: 22em;
+  flex-basis: 15em;
   justify-content: space-around;
   align-content: baseline;
   margin: 20px;
-  max-height: 16em;
+  max-height: 25em;
+  min-height: 15em;
   position: relative;
   padding: 0.1em;
-  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 5px 9px rgba(0, 0, 0, 0.02);
   flex-grow: 1;
   transition: 0.2s;
   min-width: 260px;
@@ -381,7 +391,7 @@ img {
 }
 
 .accommodation:hover {
-  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px 12px rgba(0, 0, 0, 0.03);
 }
 
 .accimg {
@@ -399,17 +409,21 @@ img {
 .accname {
   font-size: larger;
   line-height: 0.2em;
-  margin-top: 0.2em;
-  margin-left: 0.4em;
+  margin-top: 0.5em;
+  margin-left: 0.8em;
+  margin-bottom: 1em;
 }
+
+h2.accname {}
 
 .accprice {
   line-height: 0.8em;
-  margin-left: 0.5em;
+  margin-left: 0.8em;
+  font-size: larger;
 }
 
 .accstars {
-  margin-left: 0.5em;
+  margin-left: 0.9em;
   margin-top: -0.3em;
 }
 /*
@@ -493,14 +507,13 @@ img {
   flex-grow: 1;
   min-width: inherit;
   min-height: 10em;
-
   justify-content: space-between;
   flex-basis: 300px;
   width: 35em;
   position: relative;
   flex-shrink: 1;
   border-radius: 1em;
-  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 5px 9px rgba(0, 0, 0, 0.02);
   margin: 20px;
   max-width: calc((100% / 4) - 40px);
   align-content: flex-start;
@@ -509,14 +522,14 @@ img {
 
 .activity:hover,
 .popaccommodation:hover {
-  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 5px 12px rgba(0, 0, 0, 0.03);
 }
 
 .actimg {
   float: top;
   max-height: calc(100% - 2vw);
   max-width: 100%;
-  height: 40em;
+  height: calc(100% - 5em);
   object-fit: cover;
   position: absolute;
   width: 2000px;
@@ -526,8 +539,8 @@ img {
 .actinfo {
   position: absolute;
   float: bottom;
-  bottom: -0.4em;
-  left: 0.2em;
+  bottom: 0em;
+  left: 1.1em;
   font-size: 1.1vw;
 }
 
@@ -536,18 +549,18 @@ img {
     flex-basis: 40em;
   }
   #actcontainer .activity:nth-child(2) {
-    flex-basis: 15em;
+    flex-basis: 40em;
   }
 
   #actcontainer .activity:nth-child(3) {
-    flex-basis: 10em;
+    flex-basis: 15em;
   }
 
   #actcontainer .activity:nth-child(4) {
-    flex-basis: 40em;
+    flex-basis: 10em;
   }
   #actcontainer .activity:nth-child(5) {
-    flex-basis: 10em;
+    flex-basis: 40em;
   }
 
   #actcontainer .activity:nth-child(6) {
@@ -573,7 +586,7 @@ footer {
   padding: 1.5em;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   body {
     max-width: 100%;
     margin: auto;
@@ -608,7 +621,7 @@ footer {
 
   .topnav:nth-child(1) {
     max-width: 50%;
-    text-align: center;
+    text-align: left;
   }
 
   .topnav:nth-child(2) {
@@ -629,14 +642,14 @@ footer {
   .fa-search {
     display: inline;
     visibility: visible;
-    padding: 1.2em;
+    padding: 1.1em;
     background-color: #0065fc;
-    float: right;
     align-self: left;
     border-radius: 1em;
     color: white;
     box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.05);
     transition: 0.3s;
+    float: right;
   }
 
   .fa-search:hover {
@@ -724,6 +737,7 @@ footer {
   .popprice {
     bottom: 2em;
     left: 11.4em;
+    bottom: 2.5em;
     max-width: inherit;
   }
 
@@ -794,26 +808,34 @@ footer {
   }
 }
 
-@media all and (min-width: 480px) and (max-width: 1000px){
+@media all and (min-width: 480px) and (max-width: 1200px){
   body{
-    font-size: 140%;
+    font-size: 210%;
   }
 
-  
+  .accstars{
+    position: absolute;
+    bottom: 0em;
+  }
 
  
 
   .accommodation{
-    max-height: 18em;
+    max-height: 20em;
+    min-height: 16.5em;
   }
 
   .accimg{
-    max-height: 13em;
+    max-height: 10em;
     height: 13em;
   }
 
   .activity{
     flex-basis: 18em;
+  }
+
+  .actimg{
+    height: calc(100% - 3.5em)
   }
 }
 
@@ -829,4 +851,37 @@ footer {
   }
 
   
+}
+@media all and (min-width: 1200px){
+  .accstars{
+    position: absolute;
+    bottom: 0em;
+  }
+
+  
+
+  .actimg{
+    height: 100%;
+    max-height: calc(100% - 4em);
+  }
+
+  .actinfo{
+    bottom: -0.4em;
+  }
+
+  .accommodation{
+    height: 17.5em;
+  }
+
+  .popprice{
+    bottom: 2em;
+  }
+
+  #topnavcontainer{
+    float: right;
+  }
+
+  #searchbar{
+    width: max-content;
+  }
 }
